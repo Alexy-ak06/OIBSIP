@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const adminApi = axios.create({
-  baseURL: 'http://localhost:5000/api'
+  baseURL: 'https://oibsip-production.up.railway.app/api'
 });
 
 adminApi.interceptors.request.use((config) => {
