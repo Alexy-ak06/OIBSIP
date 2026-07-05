@@ -8,6 +8,9 @@ A production-grade, full-stack pizza ordering and inventory management platform 
 
 - **Frontend:** https://oibsip-kappa-five.vercel.app
 - **Backend API:** https://oibsip-production.up.railway.app
+  (health check: `/api/health`)
+
+> **Note:** New-user registration on the hosted version is limited by Railway's free-tier outbound SMTP restrictions (verification emails cannot be sent from Railway's network). Full functionality — including email verification, password reset, and Razorpay payments — is demonstrated end-to-end in the demo video, running locally.
 
 ## ✨ Features
 
@@ -78,10 +81,10 @@ npm run dev
 cd frontend
 npm install
 npm run dev
-
+```
 
 **Environment variables required (backend/.env):**
-
+```
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
