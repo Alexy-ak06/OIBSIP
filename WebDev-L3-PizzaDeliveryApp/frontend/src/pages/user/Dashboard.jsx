@@ -28,7 +28,7 @@ const Dashboard = () => {
   useEffect(() => {
     if (orders.length === 0) return;
 
-    const socket = io('https://oibsip-production.up.railway.app');
+    const socket = io('https://oibsip-production.up.railway.app')
 
     // Join a room for every order so we get live updates for each
     orders.forEach((order) => {
